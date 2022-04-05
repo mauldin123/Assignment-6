@@ -1,0 +1,208 @@
+/* defines the font-family, background-color, 
+color, margin, and padding for the app.*/
+body {
+  color:white;
+  font-family:'Georgia', serif;
+  font-size:1.2em;
+  line-height:1.15;
+  background-color: #004882;
+  opacity: 0.9;
+  padding: 25px 50px;
+  margin: 20px 45px;
+ 
+}
+
+h1 {
+  margin-top: -7px;
+  margin-bottom: 8px;
+  
+}
+
+h2 {
+  color: white;
+  margin-bottom: 0px;
+}
+
+p {
+  color:white;
+}
+/* Give the site name and description some dimension and color.*/
+header{
+  background-color:#03b674;
+  border: 8px groove white;
+  margin:5px;
+  padding:1.5%;
+}
+
+footer{
+  background-color:#03b674;;
+  border: 1px solid white;
+  margin:100px;
+  padding:1%;
+}
+
+/* give the links some dimension and color.*/
+nav a {
+  background-color:#03b674;
+  border-radius:5px 5px 5px 5px; 
+  color:white;
+  font-size:1.1em;
+  font-weight:bold;
+  line-height:3;
+  margin-right:3px;
+  padding: 3px 10px 5px 10px;
+  text-decoration:none;
+  vertical-align:middle;
+}
+
+/* hover rule.*/
+nav a:hover {
+  background-color:white;
+  border:2px solid #03b674;
+  color:#03b674;
+}
+
+/* rule to differentiate this section of the page 
+from the header and footer sections..*/
+main {
+  margin: 20px;
+  padding: 15px;
+  
+}
+
+/* 
+Form
+Add fieldset {}, legend {}, label {}, 
+input {}, and button{} rules that include the 
+same font-family as the body {} (because the 
+form elements do not inherit it like the other rules do) 
+and the same color choices as used in the table.
+Add padding to the input {} and button {} rules, to 
+improve accessibility.*/
+
+fieldset{
+  color:var(white);
+  font-family:'Georgia', serif;
+  background-color: rgb(49, 162, 238);
+  border: 4px groove white;
+}
+
+legend{
+  font-style:var(rgb(255, 255, 255));
+  padding: 5px;
+  margin: 5px;
+  font-family:'Georgia', serif;
+  font-weight: bold;
+  color: white;
+}
+
+label{
+  font-family:'Georgia', serif;
+  padding: 10px;
+  color: white;
+}
+
+select{
+  background-color: white;
+  border-radius:5px 5px 5px 5px; 
+  border: solid rgb(86, 96, 240);
+  color:#727382;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+input{
+  background-color: white;
+  border-radius:5px 5px 5px 5px; 
+  border: solid rgb(86, 96, 240);
+  color: #727382;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 1px;
+  cursor: pointer;
+  width: 135px;
+}
+
+button{
+  margin-top: 18px;
+  background-color:#03b674;;
+  border-radius:5px 5px 5px 5px; 
+  color:white;
+  font-size:1.1em;
+  font-weight:bold;
+  line-height:1;
+  margin-right:3px;
+  padding: 3px 20px 5px 20px;
+  text-decoration:none;
+  vertical-align:middle;
+}
+
+button:hover {
+  background-color:white;
+  border:2px solid rgb(86, 96, 240);
+  color:#03b674;;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+
+tr:hover {background-color: #03b674;}
+
+th {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: left;
+  background-color: #03b674;
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-logo {
+  height: 6vmin;
+  margin-top: 12px;
+  pointer-events: none;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(8px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #ffffff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+    
+  }
+  to {
+    transform: rotate(360deg);
+    
+  }
+}
